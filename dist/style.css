@@ -1,0 +1,84 @@
+*{
+  margin:0;
+  padding:0;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+body{
+  background:#311b92;
+  position:relative;
+}
+
+
+.share{
+  display:block;
+  width:160px;
+  height:160px;
+  background:#ff9100;
+  position:absolute;
+  top:500px;
+  left:50%;
+  z-index:999;
+  text-align:center;
+  overflow:hidden;
+  line-height:160px;
+  font-size:3em;
+  color:#fff;
+  -moz-box-shadow: 0px 3px 9px rgba(0,0,0,.5);
+-webkit-box-shadow: 0px 3px 9px rgba(0,0,0,.5);
+box-shadow: 0px 3px 9px rgba(0,0,0,.5);
+  border-radius:200px;
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+
+.share:hover{
+  cursor:pointer;
+}
+
+.one, .two, .three, .four{
+  position:absolute;
+  width:150px;
+  height:150px;
+  color:#fff;
+  border-radius:200px;
+  text-align:center;
+  line-height:150px;
+  font-size:1.5em;
+   top:500px;
+  left:50%;
+   -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+  -webkit-box-shadow: 0px 3px 9px rgba(0,0,0,.2);
+box-shadow: 0px 3px 9px rgba(0,0,0,.2);
+  -webkit-transition:transform  .3s ease-in-out;
+  transition:transform .3s ease-in-out;
+}
+
+.one:hover, 
+.two:hover,
+.three:hover,
+.four{
+  cursor:pointer;
+}
+
+.one i, .two i, .three i, .four i{
+  display:none;
+}
+
+
+.one{
+  background:#000000;
+}
+
+.two{
+  background:#000000;
+}
+
+.three{
+  background:#000000;
+}
+.four{
+  background:#000000;
+}

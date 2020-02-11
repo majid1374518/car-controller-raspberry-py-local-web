@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Micro2</title>
+  <link rel="stylesheet" href="./normalize.min.css">
+  <link rel='stylesheet' href='./font-awesome.min.css'>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<script>
+  var url = "http://192.168.1.200:8080/"
+  function forward() {
+    var request = new XMLHttpRequest();
+    request.open('GET', url + "forward", true);
+    request.send();
+  }
+  function backward() { 
+    var request = new XMLHttpRequest();
+    request.open('GET', url + "backward", true);
+    request.send();
+  }
+  function left() { 
+    var request = new XMLHttpRequest();
+    request.open('GET', url + "left", true);
+    request.send();
+  }
+  function right() { 
+    var request = new XMLHttpRequest();
+    request.open('GET', url + "right", true);
+    request.send();
+  }
+</script>
+
+<div class="share">
+  <p class="fa">Start</p>
+</div>
+<div class="one">
+  <a onclick="forward()">UP</a>
+</div>
+<div class="two">
+  <a onclick="left()">Left</a>
+</div>
+<div class="three">
+  <a onclick="right()">Right</a>
+</div>
+<div class="four">
+  <a onclick="backward()">Down</a>
+</div>
+<script src='./jquery.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
